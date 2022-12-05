@@ -1,4 +1,4 @@
-var dom = document.getElementById('chart-container-5');
+var dom = document.getElementById('chart-container-2');
 var myChart = echarts.init(dom, null, {
   renderer: 'canvas',
   useDirtyRect: false
@@ -31,7 +31,8 @@ option = {
   xAxis: [
     {
       type: 'category',
-      data: ['2013',
+      data: ['2012',
+        '2013',
         '2014',
         '2015',
         '2016',
@@ -39,7 +40,8 @@ option = {
         '2018',
         '2019',
         '2020',
-        '2021'],
+        '2021',
+        '2022'],
       axisPointer: {
         type: 'shadow'
       }
@@ -76,7 +78,7 @@ option = {
           return value + ' $';
         }
       },
-          data: [ 0.02,0.12,0.06,0.09,0.08,0.16,0.21,0.18,0.33]
+      data: [NaN, 0.15, 0.32, 0.37, 0.23, 0.44, 0.46, 0.57, 0.63, 0.53, NaN]
     },
      {
       name: 'Cost per mile',
@@ -87,8 +89,8 @@ option = {
           return value + ' °S';
         }
       },
-      data: [ 0.02,0.12,0.06,0.09,0.08,0.16,0.21,0.18,0.33]
-      }
+      data: [NaN, 0.15, 0.32, 0.37, 0.23, 0.44, 0.46, 0.57, 0.63, 0.53, NaN]
+    }
   ]
 };
 

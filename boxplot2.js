@@ -1,4 +1,4 @@
-var dom = document.getElementById('chart-container-3');
+var dom = document.getElementById('chart-container-6');
 var myChart = echarts.init(dom, null, {
   renderer: 'canvas',
   useDirtyRect: false
@@ -30,17 +30,15 @@ option = {
     {
       // prettier-ignore
       source: [
-                [],
-                [0.15, 0.09, 0.11],
-                [0.32, 0.52, 0.25],
-                [0.37, 0.94, 0.30],
-                [0.23, 0.25, 0.19],
-                [0.44, 0.34, 0.35],
-                [0.46, 0.70, 0.46],
-                [0.57, 0.98, 0.56],
-                [0.63, 1.10, 0.55],
-                [0.53, 0.59, 0.47],
-                []
+                [NaN,	 NaN,	 0.02 ],
+                [NaN,	 NaN,  	 0.12 ],
+                [0.06,	 0.16, 	 0.06 ],
+                [0.09,	 0.15, 	 0.09 ],
+                [0.05,	 0.49,	 0.08 ],
+                [0.12,	 0.72,	 0.16 ],
+                [0.18,	 0.94,	 0.21 ],
+                [0.12,	 0.18,	 0.18 ],
+                [0.28,	 0.64,	 0.33 ]
             ]
     },
     {
@@ -54,12 +52,12 @@ option = {
       fromTransformResult: 1
     }
   ],
-  tooltip: {
-    trigger: 'item',
-    axisPointer: {
-      type: 'shadow'
-    }
-  },
+//   tooltip: {
+//     trigger: 'item',
+//     axisPointer: {
+//       type: 'shadow'
+//     }
+//   },
   grid: {
     left: '10%',
     right: '10%',
