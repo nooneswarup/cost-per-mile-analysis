@@ -1,4 +1,4 @@
-var dom = document.getElementById('chart-container-8');
+var dom = document.getElementById('chart-container-11');
 var myChart = echarts.init(dom, null, {
   renderer: 'canvas',
   useDirtyRect: false
@@ -78,7 +78,7 @@ option = {
           return value + ' $';
         }
       },
-      data: [0.05,0.02,0.04,1.62,0.18,0.19,0.28,0.13,0.53,2.55 ,NaN]
+      data: [0.13,0.21,0.30,0.26,0.32,0.64,0.40,0.84,0.61,1.24,0.96]
     },
      {
       name: 'Cost per mile',
@@ -86,10 +86,10 @@ option = {
       yAxisIndex: 1,
       tooltip: {
         valueFormatter: function (value) {
-          return value + ' °S';
+          return value + ' $';
         }
       },
-      data: [0.05,0.02,0.04,1.62,0.18,0.19,0.28,0.13,0.53,2.55 ,NaN]
+      data: [0.13,0.21,0.30,0.26,0.32,0.64,0.40,0.84,0.61,1.24,0.96]
     }
   ]
 };

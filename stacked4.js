@@ -4,7 +4,7 @@
 // var myChart = echarts.init(chartDom);
 // var option;
 
-var dom = document.getElementById('chart-container-1');
+var dom = document.getElementById('chart-container-10');
 var myChart = echarts.init(dom, null, {
   renderer: 'canvas',
   useDirtyRect: false
@@ -57,7 +57,7 @@ option = {
       emphasis: {
         focus: 'series'
       },
-      data: [0, 50, 54, 42, 43, 60, 51, 42, 45, 51, 72]
+      data: [28,34,49,38,41,59,52,60,59,68,60]
     },
     {
       name: 'Periodic',
@@ -66,7 +66,7 @@ option = {
       emphasis: {
         focus: 'series'
       },
-      data: [0, 11, 38, 49, 50, 36, 32, 51, 50, 43, 28]
+      data: [63,49,43,55,50,38,38,38,38,26,34]
     },
     {
       name: 'Preventative',
@@ -75,7 +75,7 @@ option = {
       emphasis: {
         focus: 'series'
       },
-      data: [0, 39, 7, 9, 7, 4, 17, 7, 5, 6, 0]
+      data: [8,16,8,6,9,10,10,2,3,6,6]
     }
   ]
 };
